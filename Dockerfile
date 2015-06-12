@@ -20,7 +20,7 @@ RUN usermod -g 100 nobody
 RUN add-apt-repository ppa:jcfp/ppa
 RUN add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ trusty universe multiverse"
 RUN add-apt-repository "deb http://us.archive.ubuntu.com/ubuntu/ trusty-updates universe multiverse"
-RUN add-apt-repository ppa:jon-severinsson/ffmpeg
+RUN add-apt-repository ppa:mc3man/trusty-media
 RUN apt-get update -q
 RUN apt-get install -qy unrar par2 mc sabnzbdplus wget ffmpeg sabnzbdplus-theme-mobile
 
