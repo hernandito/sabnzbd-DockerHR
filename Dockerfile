@@ -45,3 +45,5 @@ EXPOSE 8080
 RUN mkdir /etc/service/sabnzbd
 ADD sabnzbd.sh /etc/service/sabnzbd/run
 RUN chmod +x /etc/service/sabnzbd/run
+
+RUN chmod -R 777 /config/
