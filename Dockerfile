@@ -32,7 +32,11 @@ RUN tar -C /usr/local/bin -xvf /tmp/par2cmdline-0.4-tbb-20141125-lin64.tar.gz --
 # Path to a directory that only contains the sabnzbd.conf
 VOLUME /config
 VOLUME /downloads
-VOLUME /usr/share/sabnzbdplus/interfaces
+
+
+
+ADD  interfaces/ /usr/share/sabnzbdplus/interfaces/
+
 
 
 EXPOSE 8080
